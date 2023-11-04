@@ -10,12 +10,12 @@ def first_occurence(list1,x):                                   # Passing the SO
         else:                                                           
             if mid==0 or list1[mid]!=list1[mid-1]:              # If mid==0 this condition says that if the searching element is at index 0 
                 return mid                                      # list1[mid]!=list1[mid-1] this comdition checks that if the current mid element is not equal to the previous element ; if the previous element is not equal to mid it will return mid otherwise it will fall down to else condition
-            else:
+            else:                                               # If the previous element is equal to mid current element then it will go to else condition 
                 high=mid-1                                      # high=mid-1 we are checking the first occurrence right , the array is sorted right , so we take high from the right and assign right=mid-1 FIRST OCCURRENCE even if the element is present on the right pivot or left pivot
-    return -1
+    return -1                                                   # Confusing right     
 
 
 
 list1=[1,2,3,3,4,5,6,7,9,0]
 x=3
-print(first_occurence(list1,x))
+print(first_occurence)
